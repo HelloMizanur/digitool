@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "image": "https://i.ibb.co.com/Kx94JFJw/design-tool.png",
+    "isPopular": true,
+    "features": [
+      "Unlimited AI Generations",
+      "SEO Optimization Tools",
+      "Plagiarism Checker",
+      "Multi-language Support"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Visual Genius",
+    "description": "Create stunning visuals and high-resolution images from simple text prompts instantly.",
+    "price": 49,
+    "image": "https://i.ibb.co.com/GQpbbKdN/operation.png",
+    "isPopular": false,
+    "features": [
+      "High-resolution generation",
+      "Customizable style templates",
+      "Batch processing",
+      "AI-driven enhancements"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Code Master AI",
+    "description": "Debug, refactor, and write clean code across 20+ programming languages with ease.",
+    "price": 39,
+    "image": "https://i.ibb.co.com/k2KWzch7/portfolio.png",
+    "isPopular": true,
+    "features": [
+      "Real-time bug fixing",
+      "Code documentation generator",
+      "API integration helper",
+      "GitHub synchronization"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Video Flow AI",
+    "description": "Turn your scripts into engaging professional videos with AI avatars and voiceovers.",
+    "price": 59,
+    "image": "https://i.ibb.co.com/JRbtHsX6/shopping-cart.png",
+    "isPopular": false,
+    "features": [
+      "Realistic AI Avatars",
+      "Auto-subtitle generation",
+      "4K Video Export",
+      "Premium Stock Library"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Data Insights Pro",
+    "description": "Upload raw data and get visualized insights and automated reports in minutes.",
+    "price": 99,
+    "image": "https://i.ibb.co.com/LzvZGjf2/social-media.png",
+    "isPopular": true,
+    "features": [
+      "Predictive Analytics",
+      "Interactive Dashboards",
+      "Automated Excel Reports",
+      "Cloud Data Backup"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Audio Sync AI",
+    "description": "Professional quality voiceovers and music generation for your podcasts and videos.",
+    "price": 19,
+    "image": "https://i.ibb.co.com/g0rLyGj/writing-2327400-1.png",
+    "isPopular": false,
+    "features": [
+      "Text-to-Speech (Pro Voices)",
+      "Background Music AI",
+      "Noise Cancellation",
+      "Podcast Editing Tools"
+    ]
+  }
+]
