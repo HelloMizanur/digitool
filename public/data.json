@@ -5,7 +5,7 @@
     "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
     "price": 29,
     "image": "https://i.ibb.co.com/Kx94JFJw/design-tool.png",
-    "isPopular": true,
+    "status": "Popular",
     "features": [
       "Unlimited AI Generations",
       "SEO Optimization Tools",
@@ -19,7 +19,7 @@
     "description": "Create stunning visuals and high-resolution images from simple text prompts instantly.",
     "price": 49,
     "image": "https://i.ibb.co.com/GQpbbKdN/operation.png",
-    "isPopular": false,
+    "status": "Best seller",
     "features": [
       "High-resolution generation",
       "Customizable style templates",
@@ -33,7 +33,7 @@
     "description": "Debug, refactor, and write clean code across 20+ programming languages with ease.",
     "price": 39,
     "image": "https://i.ibb.co.com/k2KWzch7/portfolio.png",
-    "isPopular": true,
+    "status": "New",
     "features": [
       "Real-time bug fixing",
       "Code documentation generator",
@@ -46,8 +46,8 @@
     "title": "Video Flow AI",
     "description": "Turn your scripts into engaging professional videos with AI avatars and voiceovers.",
     "price": 59,
-    "image": "https://i.ibb.co.com/JRbtHsX6/shopping-cart.png",
-    "isPopular": false,
+    "image": "https://i.ibb.co.com/GQpbbKdN/operation.png",
+    "status": "New",
     "features": [
       "Realistic AI Avatars",
       "Auto-subtitle generation",
@@ -61,7 +61,7 @@
     "description": "Upload raw data and get visualized insights and automated reports in minutes.",
     "price": 99,
     "image": "https://i.ibb.co.com/LzvZGjf2/social-media.png",
-    "isPopular": true,
+    "status": "Best seller",
     "features": [
       "Predictive Analytics",
       "Interactive Dashboards",
@@ -75,7 +75,7 @@
     "description": "Professional quality voiceovers and music generation for your podcasts and videos.",
     "price": 19,
     "image": "https://i.ibb.co.com/g0rLyGj/writing-2327400-1.png",
-    "isPopular": false,
+    "status": "New",
     "features": [
       "Text-to-Speech (Pro Voices)",
       "Background Music AI",

@@ -1,6 +1,12 @@
 import ProductCard from "./ProductCard";
 
-const ToolsSection = ({ setSelectedBtn, selectedBtn }) => {
+const ToolsSection = ({
+  setSelectedBtn,
+  selectedBtn,
+  allProducts,
+  setSelectedProduct,
+  selectedProduct,
+}) => {
   return (
     <div className="py-10 md:px-30">
       <div className=" text-center">
@@ -26,7 +32,22 @@ const ToolsSection = ({ setSelectedBtn, selectedBtn }) => {
             Cart(2)
           </a>
         </div>
-        <ProductCard />
+
+        {selectedBtn === "products" ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {allProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        ) : selectedProduct.length === 0 ? (
+          <div className="flex text-5xl py-20 justify-center items-center">
+            No Products
+          </div>
+        ) : (
+          selectedProduct.map((product, idx) => {
+            return <div key={idx}>Product</div>;
+          })
+        )}
       </div>
     </div>
   );

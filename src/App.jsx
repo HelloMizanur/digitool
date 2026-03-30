@@ -7,6 +7,7 @@ import axios from "axios";
 const App = () => {
   const [selectedBtn, setSelectedBtn] = useState("products");
   const [allProducts, setAllProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,13 +20,18 @@ const App = () => {
     };
     fetchData();
   }, []);
-  console.log(allProducts);
 
   return (
     <>
       <Navbar />
       <Hero />
-      <ToolsSection selectedBtn={selectedBtn} setSelectedBtn={setSelectedBtn} />
+      <ToolsSection
+        selectedProduct={selectedProduct}
+        setSelectedProduct={setSelectedProduct}
+        allProducts={allProducts}
+        selectedBtn={selectedBtn}
+        setSelectedBtn={setSelectedBtn}
+      />
     </>
   );
 };
