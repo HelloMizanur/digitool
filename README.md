@@ -1,16 +1,33 @@
-# React + Vite
+# 🚀 DigiTools - Premium Digital Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern, high-performance web application designed to help creators and professionals find the best digital tools in seconds. With a sleek UI and seamless user experience, managing your favorite tools has never been easier.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
 
-## React Compiler
+This project was built using a modern tech stack to ensure speed and scalability:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js (Component-based UI)
+- **Styling:** Tailwind CSS & DaisyUI (For a clean, modern look)
+- **Language:** JavaScript (ES6+)
+- **Notifications:** React-Toastify (For beautiful, non-intrusive alerts)
+- **Database:** JSON (Local data management for products)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+### 1. Dynamic Product Filtering
+
+Users can easily switch between viewing the full product catalog and their personalized cart. The interface updates instantly without reloading the page, providing a smooth "Single Page Application" (SPA) feel.
+
+### 2. Smart Cart Management
+
+Our cart system prevents duplicate entries. If you try to add an item that is already in your cart, the system alerts you instantly. You can also remove items and see the total price update in real-time.
+
+### 3. Fully Responsive & Modern UI
+
+Built with a "Mobile-First" approach, DigiTools looks stunning on everything from small smartphones to large 4K monitors. It features premium gradients, glassmorphism effects, and smooth hover animations.
+
+---
