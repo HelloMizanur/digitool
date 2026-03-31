@@ -1,7 +1,7 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navbar = () => {
+const Navbar = ({ selectedProduct }) => {
   return (
     <>
       <div className="fixed z-20 navbar bg-base-100 shadow-sm md:px-30">
@@ -71,9 +71,13 @@ const Navbar = () => {
           <div className="relative cursor-pointer">
             <CiShoppingCart className="text-3xl" />
 
-            <span className="absolute -top-2 -right-2 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-              3
-            </span>
+            {selectedProduct.length !== 0 ? (
+              <span className="absolute -top-2 -right-2 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                {selectedProduct.length}
+              </span>
+            ) : (
+              ""
+            )}
           </div>
 
           <a className="text-xl cursor-pointer">Login</a>

@@ -1,5 +1,6 @@
 import ProductCard from "./ProductCard";
-
+import CardProduct from "./CardProduct";
+import { toast } from "react-toastify";
 const ToolsSection = ({
   setSelectedBtn,
   selectedBtn,
@@ -7,6 +8,14 @@ const ToolsSection = ({
   setSelectedProduct,
   selectedProduct,
 }) => {
+  const totalPriceOfCart = selectedProduct.reduce(
+    (acc, item) => acc + Number(item.price),
+    0,
+  );
+  const removeAllFromCart = () => {
+    setSelectedProduct([]);
+    toast.error("Remove all product from cart");
+  };
   return (
     <div className="py-10 md:px-30">
       <div className=" text-center">
@@ -29,14 +38,19 @@ const ToolsSection = ({
             onClick={() => setSelectedBtn("card")}
             className={`btn text-xl border-none ${selectedBtn !== "products" ? " bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white " : ""}`}
           >
-            Cart(2)
+            Cart({selectedProduct.length})
           </a>
         </div>
 
         {selectedBtn === "products" ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {allProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard
+                selectedProduct={selectedProduct}
+                setSelectedProduct={setSelectedProduct}
+                key={product.id}
+                product={product}
+              />
             ))}
           </div>
         ) : selectedProduct.length === 0 ? (
@@ -44,9 +58,29 @@ const ToolsSection = ({
             No Products
           </div>
         ) : (
-          selectedProduct.map((product, idx) => {
-            return <div key={idx}>Product</div>;
-          })
+          <div className="text-left w-full">
+            <h2 className="text-2xl font-semibold mb-5 ">Your Cart</h2>
+            <div className="flex flex-col gap-4">
+              {selectedProduct.map((product) => (
+                <CardProduct
+                  selectedProduct={selectedProduct}
+                  setSelectedProduct={setSelectedProduct}
+                  key={product.id}
+                  product={product}
+                />
+              ))}
+            </div>
+            <div className="py-5 text-xl font-semibold flex justify-between items-center px-5">
+              <span>Total</span>
+              <span>${totalPriceOfCart}</span>
+            </div>
+            <button
+              onClick={() => removeAllFromCart()}
+              className="btn text-xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white border-none btn-block"
+            >
+              Proceed To Checkout
+            </button>
+          </div>
         )}
       </div>
     </div>

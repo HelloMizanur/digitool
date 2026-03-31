@@ -1,6 +1,17 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, selectedProduct, setSelectedProduct }) => {
+  const addCard = (curProduct) => {
+    const isExist = selectedProduct.some((item) => item.id === curProduct.id);
+
+    if (isExist) {
+      toast.warn("This product is already in your cart!");
+    } else {
+      setSelectedProduct([...selectedProduct, curProduct]);
+      toast.success("Added successfully to cart");
+    }
+  };
   return (
     <div className="card w-96 bg-base-100 shadow-sm ">
       <div className="card-body">
@@ -60,7 +71,12 @@ const ProductCard = ({ product }) => {
           </li>
         </ul>
         <div className="mt-6">
-          <button className="btn text-xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white border-none btn-block">
+          <button
+            onClick={() => {
+              addCard(product);
+            }}
+            className="btn text-xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white border-none btn-block"
+          >
             Buy Now
           </button>
         </div>

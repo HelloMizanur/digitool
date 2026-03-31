@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import ToolsSection from "./components/ToolsSection";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const [selectedBtn, setSelectedBtn] = useState("products");
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar selectedProduct={selectedProduct} />
       <Hero />
       <ToolsSection
         selectedProduct={selectedProduct}
@@ -32,6 +33,8 @@ const App = () => {
         selectedBtn={selectedBtn}
         setSelectedBtn={setSelectedBtn}
       />
+
+      <ToastContainer />
     </>
   );
 };
