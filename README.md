@@ -31,3 +31,7 @@ Our cart system prevents duplicate entries. If you try to add an item that is al
 Built with a "Mobile-First" approach, DigiTools looks stunning on everything from small smartphones to large 4K monitors. It features premium gradients, glassmorphism effects, and smooth hover animations.
 
 ---
+
+### Live link
+
+https://digitaltools0050.netlify.app/

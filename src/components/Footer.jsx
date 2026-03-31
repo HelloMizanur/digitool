@@ -1,5 +1,5 @@
 import React from "react";
-import { CiInstagram, FaFacebookF, CiYoutube } from "react-icons/ci";
+import { CiInstagram, CiYoutube } from "react-icons/ci";
 const Footer = () => {
   return (
     <div
@@ -9,7 +9,7 @@ const Footer = () => {
         padding: "60px 20px",
       }}
     >
-      <div className="container mx-auto">
+      <div className="px-10 md:px-30">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-10">
             <h1 className="text-3xl font-bold mb-4">DigiTools</h1>
@@ -50,7 +50,7 @@ const Footer = () => {
                 <CiInstagram />
               </div>
               <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center">
-                <FaFacebookF />
+                Fb
               </div>
               <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center">
                 <CiYoutube />
