@@ -13,7 +13,7 @@ const ProductCard = ({ product, selectedProduct, setSelectedProduct }) => {
     }
   };
   return (
-    <div className="card w-96 bg-base-100 shadow-sm ">
+    <div className="card w-96 bg-base-100 shadow-sm transition-transform hover:scale-105 duration-300">
       <div className="card-body">
         <div className=" flex justify-end">
           <span

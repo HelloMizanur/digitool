@@ -80,9 +80,11 @@ const Navbar = ({ selectedProduct }) => {
             )}
           </div>
 
-          <a className="text-xl cursor-pointer">Login</a>
+          <a className="text-xl cursor-pointer transition-transform hover:scale-105 duration-300">
+            Login
+          </a>
 
-          <a className="btn text-xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white border-none">
+          <a className="btn text-xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white border-none transition-transform hover:scale-105 duration-300">
             Get Started
           </a>
         </div>

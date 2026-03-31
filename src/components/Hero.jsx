@@ -27,10 +27,10 @@ const Hero = () => {
               today. Explore Products
             </p>
             <div className="space-x-2">
-              <button className="btn text-xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white border-none">
+              <button className="btn text-xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-2xl text-white border-none transition-transform hover:scale-105 duration-300">
                 Explore Products
               </button>
-              <button className="btn border-2 text-xl font-bold border-[#4f39f6] rounded-2xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent">
+              <button className="btn border-2 text-xl font-bold border-[#4f39f6] rounded-2xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent transition-transform hover:scale-105 duration-300">
                 <RxVideo className="text-[#9514fa]" /> Watch Demo
               </button>
             </div>
