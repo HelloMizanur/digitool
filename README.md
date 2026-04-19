@@ -24,7 +24,7 @@ Users can easily switch between viewing the full product catalog and their perso
 
 ### 2. Smart Cart Management
 
-Our cart system prevents duplicate entries. If you try to add an item that is already in your cart, the system alerts you instantly. You can also remove items and see the total price update in real-time.
+Our cart system prevents duplicate entries. If you try to add an item that is already in your cart, the system alerts you instantly. You can also remove items and see the total price update in the real-time.
 
 ### 3. Fully Responsive & Modern UI
 
