@@ -1,4 +1,4 @@
-# 🚀 DigiTools - Premium Digital Marketplace dd
+# 🚀 DigiTools - Premium Digital Marketplace
 Here
 DigiTools is a modern, high-performance web application designed to help creators and professionals find the best digital tools in seconds. With a sleek UI and seamless user experience, managing your favorite tools has never been easier.
 
